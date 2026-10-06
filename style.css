@@ -1,0 +1,337 @@
+   :root {
+     --oscuro: #601D49;
+     --acento: #BD5579;
+     --suave: #EA9D9D;
+     --claro: #FFF9F5;
+     --crema: #FFEBB8;
+   }
+
+   *{ box-sizing: border-box; }
+
+   body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color:  #FFF9F5;
+   }
+
+   strong{
+    color: var(--claro);
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+   }
+
+  header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  background-color: var(--oscuro);
+  }
+
+header nav{
+  display: flex;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+   a{
+    text-decoration: none;
+    color: var(--claro);
+   }
+
+   nav a:hover{
+    color: var(--acento);
+   }
+
+   main{
+  padding: 0 1.25rem;
+    }
+
+   #hero{
+    background: linear-gradient(rgba(96, 29, 73, 0.7), rgba(96, 29, 73, 0.5)), url('upscalemedia-transformed.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 25rem;
+    color: var(--claro);
+    text-align: center;
+    padding: 3.125rem 1.25rem;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .hero-content{
+    max-width: 40rem;
+   }
+
+   .hero-features{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+   }
+
+   .hero-features span{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+   }
+
+   button{
+    background-color: var(--acento);
+    color: var(--claro);
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+    transition: background 0.3s;
+   }
+   button:hover{
+    background-color: var(--suave);
+   }
+
+    h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;}
+
+    .buscador {
+    margin: 2rem 0 1rem;
+    text-align: center;
+    }
+
+    #busqueda {
+    width: min(100%, 30rem);
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--suave);
+    border-radius: 2rem;
+    font-family: inherit;
+    }
+
+    #galeria h2{
+        color: var(--oscuro);
+        font-size: 3rem;
+    }
+
+    #galeria h3 {
+    color: var(--oscuro);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.4rem;
+    }
+
+  #galeria ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    }
+
+    #galeria .precio {
+    font-weight: bold;
+    color: var(--acento);
+    }
+
+    #galeria li {
+    background-color: var(--claro);
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--suave);
+    box-shadow: 0 0.3rem 1rem rgba(96, 29, 73, 0.10);
+    display: flex;
+    flex-direction: column;
+    }
+
+    #galeria li button {
+    width: 100%;
+    background-color: var(--oscuro);
+    color:var(--claro);
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: auto;
+   
+    }
+
+    #galeria li button:hover {
+    background-color: var(--acento);
+    }
+
+    #galeria li img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    }
+
+    #acerca-de {
+    padding-block: 3rem 1rem;
+    }
+
+    .acerca-content{
+        max-width: 70rem;
+        margin: 0 auto;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    #acerca-de h2{
+    margin:0 0 0.8rem;
+    color:var(--oscuro)
+    }
+
+
+    .acerca-texto{
+    flex: 1;
+    }
+
+    #acerca-de p, #contacto p{
+    color: var(--oscuro);
+    line-height: 1.6;
+    margin: 0;
+    }
+
+    .acerca-img{
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+  
+    
+    }
+
+    #contacto {
+    background-color: var(--oscuro);
+    padding: 3rem 1.5rem;
+    margin-top: 2rem;
+}
+
+.contacto-contenido {
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.contacto-texto {
+    flex: 1;
+}
+
+#contacto h2 {
+    color: var(--claro);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 0 0 0.8rem;
+}
+
+#contacto p {
+    color: var(--claro);
+    line-height: 1.6;
+}
+
+.contacto-info {
+    margin-top: 1.5rem;
+}
+
+.contacto-info p {
+    margin: 0.5rem 0;
+}
+
+#form-contacto {
+    flex: 1;
+    background-color: var(--claro);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 1rem rgba(96, 29, 73, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+#form-contacto label {
+    color: var(--oscuro);
+    font-weight: bold;
+}
+
+#form-contacto input,
+#form-contacto textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--oscuro);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    background-color: var(--claro);
+}
+
+#form-contacto input:focus,
+#form-contacto textarea:focus {
+    outline: 2px solid var(--acento);
+}
+
+#form-contacto textarea {
+    min-height: 7rem;
+    resize: vertical;
+}
+
+#form-contacto button {
+    margin-top: 0.5rem;
+    background-color: var(--oscuro);
+}
+
+#form-contacto button:hover {
+    background-color: var(--acento);
+}
+
+#mensaje-formulario {
+    margin: 0.5rem 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+    footer{
+    color: var(--oscuro);
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px){
+  header{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  header nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #galeria ul{
+    grid-template-columns: 1fr;
+  }
+  
+  #hero{
+    min-height: 20rem;
+  }
+  
+  #galeria li img{
+    height: 15rem;
+  }
+}
